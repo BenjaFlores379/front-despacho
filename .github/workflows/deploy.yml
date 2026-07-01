@@ -1,4 +1,4 @@
-﻿name: Deploy Frontend to ECS Fargate
+name: Deploy Frontend to ECS Fargate
 
 on:
   push:
@@ -7,9 +7,9 @@ on:
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
-  ECR_REPOSITORY: front-repo # CAMBIAR si tu repo en ECR se llama distinto
-  ECS_CLUSTER: TU_CLUSTER_AQUI
-  ECS_SERVICE: front-service # CAMBIAR si tu servicio de ECS se llama distinto
+  ECR_REPOSITORY: innovatech/frontend
+  ECS_CLUSTER: innovatech-cluster
+  ECS_SERVICE: frontend-service
 
 jobs:
   deploy:
